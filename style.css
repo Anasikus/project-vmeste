@@ -15,6 +15,60 @@ body {
     line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button{
+    cursor: pointer;
+    border-color: transparent;
+}
+.hero-image img,
+.about-image img,
+.language-image img,
+.news-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.language-switcher button {
+    all: unset;
+    border: #1E3A5F 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+.language-switcher button:hover {
+    background: #c9e0ffbd;
+    color: #1e3a5f98;
+}
+.language-switcher button.active {
+    background: #1e3a5f98;
+    color: white;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#google_translate_element {
+    transform: scale(0.9);
+}
+
+.goog-te-gadget {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.goog-te-gadget select {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    background: white;
+    cursor: pointer;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -218,7 +272,14 @@ body {
 }
 
 .faq-answer {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    padding: 0 25px;
+}
+
+.faq-answer.active {
+    max-height: 300px;
     padding: 0 25px 25px;
 }
 
@@ -568,6 +629,183 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #4A90E2;
     border-radius: 20px;
+}
+
+/* =========================
+   DARK THEME
+========================= */
+
+body.dark-theme {
+    background: #0F172A;
+    color: #E2E8F0;
+}
+
+/* HEADER */
+
+body.dark-theme .header,
+body.dark-theme .hero,
+body.dark-theme .gray-section,
+body.dark-theme .language-section,
+body.dark-theme .contacts-section,
+body.dark-theme .material-card,
+body.dark-theme .news-card,
+body.dark-theme .mobile-menu,
+body.dark-theme .contact-item {
+    background: #1E293B;
+}
+body.dark-theme .faq-item {
+    background: #1E293B;
+    color: #E2E8F0;
+}
+body.dark-theme .faq-item button{
+    background: #1E293B;
+    color: #E2E8F0;
+}
+body.dark-theme .card {
+    background: #1E293B;
+    color: #E2E8F0;
+    border: #2b5384 1px solid;
+}
+body.dark-theme .nav a,
+body.dark-theme .logo,
+body.dark-theme .faq-question,
+body.dark-theme .mobile-menu a,
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme p {
+    color: #E2E8F0;
+}
+
+body.dark-theme .phrase {
+    background: #334155;
+}
+
+body.dark-theme .contact-form input,
+body.dark-theme .contact-form textarea {
+    background: #0F172A;
+    border: 1px solid #334155;
+    color: white;
+}
+
+body.dark-theme .contact-form input::placeholder,
+body.dark-theme .contact-form textarea::placeholder {
+    color: #94A3B8;
+}
+
+body.dark-theme .language-switcher button {
+    border-color: #94A3B8;
+    color: white;
+}
+
+body.dark-theme .language-switcher button:hover {
+    background: #334155;
+}
+
+body.dark-theme .language-switcher button.active {
+    background: #4A90E2;
+}
+
+body.dark-theme ::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+
+body.dark-theme ::-webkit-scrollbar-thumb {
+    background: #475569;
+}
+
+/* =========================
+   THEME BUTTON
+========================= */
+
+.theme-toggle {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #1E3A5F;
+    color: white;
+
+    font-size: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+    z-index: 1000;
+
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   SCROLL TOP BUTTON
+========================= */
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #4CAF50;
+    color: white;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 1000;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    transform: translateY(-5px);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .theme-toggle,
+    .scroll-top {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
 }
 
 @media (max-width: 900px) {

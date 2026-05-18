@@ -1,40 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Вместе — Социальная адаптация мигрантов</title>
+  <title data-i18n="pageTitle">
+    Вместе — Социальная адаптация мигрантов
+  </title>
 
   <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
 
 <header class="header">
+
   <div class="container header-container">
+
     <div class="logo">
-        <img src="images/favicon.png" alt="Логотип">
-        <span>Вместе</span>
+
+      <img
+        src="images/favicon.png"
+        alt="Логотип"
+        data-i18n-alt="logoAlt">
+
+      <span data-i18n="logoText">
+        Вместе
+      </span>
+
     </div>
 
     <nav class="nav">
-      <a href="#home">Главная</a>
-      <a href="#about">О проекте</a>
-      <a href="#help">Помощь</a>
-      <a href="#materials">Материалы</a>
-      <a href="#news">Новости</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contacts">Контакты</a>
+
+      <a href="#home" data-i18n="nav.home">
+        Главная
+      </a>
+
+      <a href="#about" data-i18n="nav.about">
+        О проекте
+      </a>
+
+      <a href="#help" data-i18n="nav.help">
+        Помощь
+      </a>
+
+      <a href="#materials" data-i18n="nav.materials">
+        Материалы
+      </a>
+
+      <a href="#news" data-i18n="nav.news">
+        Новости
+      </a>
+
+      <a href="#faq" data-i18n="nav.faq">
+        FAQ
+      </a>
+
+      <a href="#contacts" data-i18n="nav.contacts">
+        Контакты
+      </a>
+
     </nav>
 
-    <button class="menu-btn" id="menuBtn">
-      ☰
-    </button>
+    <div class="header-actions">
+
+      <div class="language-switcher">
+
+        <button data-language="ru">
+          RU
+        </button>
+
+        <button data-language="en">
+          EN
+        </button>
+
+        <button data-language="uz">
+          UZ
+        </button>
+        
+        <button id="themeToggle" class="theme-btn">
+            🌙
+        </button>
+      </div>
+
+      <button class="menu-btn" id="menuBtn">
+        ☰
+      </button>
+
+    </div>
 
   </div>
 
@@ -42,15 +104,37 @@
 
 <div class="mobile-menu" id="mobileMenu">
 
-  <a href="#home">Главная</a>
-  <a href="#about">О проекте</a>
-  <a href="#help">Помощь</a>
-  <a href="#materials">Материалы</a>
-  <a href="#news">Новости</a>
-  <a href="#faq">FAQ</a>
-  <a href="#contacts">Контакты</a>
+  <a href="#home" data-i18n="nav.home">
+    Главная
+  </a>
+
+  <a href="#about" data-i18n="nav.about">
+    О проекте
+  </a>
+
+  <a href="#help" data-i18n="nav.help">
+    Помощь
+  </a>
+
+  <a href="#materials" data-i18n="nav.materials">
+    Материалы
+  </a>
+
+  <a href="#news" data-i18n="nav.news">
+    Новости
+  </a>
+
+  <a href="#faq" data-i18n="nav.faq">
+    FAQ
+  </a>
+
+  <a href="#contacts" data-i18n="nav.contacts">
+    Контакты
+  </a>
 
 </div>
+
+<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -58,27 +142,37 @@
 
     <div class="hero-content">
 
-      <span class="hero-badge">
+      <span class="hero-badge" data-i18n="hero.badge">
         Поддержка • Адаптация • Интеграция
       </span>
 
-      <h1>
+      <h1 data-i18n="hero.title">
         Помогаем мигрантам адаптироваться и чувствовать себя уверенно в российских городах
       </h1>
 
-      <p>
+      <p data-i18n="hero.text">
         Информация, поддержка и полезные сервисы для комфортной жизни,
         работы и интеграции в общество.
       </p>
 
       <div class="hero-buttons">
 
-        <a href="#contacts" class="btn btn-primary">
+        <a
+          href="#contacts"
+          class="btn btn-primary"
+          data-i18n="helpButton">
+
           Получить помощь
+
         </a>
 
-        <a href="#materials" class="btn btn-secondary">
+        <a
+          href="#materials"
+          class="btn btn-secondary"
+          data-i18n="materialsButton">
+
           Полезные материалы
+
         </a>
 
       </div>
@@ -87,13 +181,18 @@
 
     <div class="hero-image">
 
-      <img src="images/hero.jpg" alt="Вместе">
+      <img
+        src="images/hero.jpg"
+        alt="Вместе"
+        data-i18n-alt="hero.alt">
 
     </div>
 
   </div>
 
 </section>
+
+<!-- ABOUT -->
 
 <section class="section" id="about">
 
@@ -101,9 +200,13 @@
 
     <div class="section-title">
 
-      <span>О проекте</span>
+      <span data-i18n="nav.about">
+        О проекте
+      </span>
 
-      <h2>О проекте «Вместе»</h2>
+      <h2 data-i18n="about.title">
+        О проекте «Вместе»
+      </h2>
 
     </div>
 
@@ -111,27 +214,31 @@
 
       <div class="about-text">
 
-        <p>
-          Проект «Вместе» создан для поддержки мигрантов,
-          проживающих в российских городах.
+        <p data-i18n="about.text1">
+            Проект «Вместе» создан для поддержки мигрантов, проживающих в российских городах. 
+            Наша цель — помочь людям быстрее адаптироваться к новой среде, 
+            получить необходимую информацию и почувствовать себя частью общества.
         </p>
 
-        <p>
-          Наша цель — помочь людям быстрее адаптироваться
-          к новой среде, получить необходимую информацию
-          и почувствовать себя частью общества.
+        <p data-i18n="about.text2">
+            На сайте собраны полезные материалы, инструкции, 
+            контакты организаций и рекомендации по важным вопросам: 
+            оформление документов, трудоустройство, медицинская помощь, 
+            изучение русского языка и социальная адаптация.
         </p>
 
-        <p>
-          На сайте собраны полезные материалы,
-          инструкции, контакты организаций и рекомендации.
+        <p data-i18n="about.text3">
+            Мы стремимся сделать процесс интеграции понятным, безопасным и доступным для каждого.
         </p>
 
       </div>
 
       <div class="about-image">
 
-        <img src="images/support.jpg" alt="Поддержка">
+        <img
+          src="images/support.jpg"
+          alt="Поддержка"
+          data-i18n-alt="about.supportAlt">
 
       </div>
 
@@ -140,6 +247,8 @@
   </div>
 
 </section>
+
+<!-- HELP -->
 
 <section class="section gray-section" id="help">
 
@@ -147,78 +256,112 @@
 
     <div class="section-title">
 
-      <span>Поддержка</span>
+      <span data-i18n="nav.help">
+        Поддержка
+      </span>
 
-      <h2>Основные направления помощи</h2>
+      <h2 data-i18n="help.title">
+        Основные направления помощи
+      </h2>
 
     </div>
 
     <div class="cards">
 
       <div class="card">
-        <div class="icon"><img src="images/legal-help.png" alt="Юридическая поддержка"></div>
 
-        <h3>Юридическая поддержка</h3>
+        <div class="icon">
+          <img src="images/legal-help.png" alt="">
+        </div>
 
-        <p>
-          Помощь с регистрацией,
-          оформлением документов и трудовыми вопросами.
+        <h3 data-i18n="help.card1Title">
+          Юридическая поддержка
+        </h3>
+
+        <p data-i18n="help.card1Text">
+            Помогаем разобраться с регистрацией, оформлением документов, разрешением на работу, временным проживанием и другими юридическими вопросами.
         </p>
+
       </div>
 
       <div class="card">
-        <div class="icon"><img src="images/work.png" alt="Работа и занятость"></div>
 
-        <h3>Работа и занятость</h3>
+        <div class="icon">
+          <img src="images/work.png" alt="">
+        </div>
 
-        <p>
-          Информация о трудоустройстве,
-          правах работников и безопасной работе.
+        <h3 data-i18n="help.card2Title">
+          Работа и занятость
+        </h3>
+
+        <p data-i18n="help.card2Text">
+          Предоставляем информацию о поиске работы, правах работников, составлении резюме и безопасном трудоустройстве.
         </p>
+
       </div>
 
       <div class="card">
-        <div class="icon"><img src="images/russian_language.jpg" alt="Русский язык"></div>
 
-        <h3>Русский язык</h3>
+        <div class="icon">
+          <img src="images/russian_language.jpg" alt="">
+        </div>
 
-        <p>
-          Бесплатные материалы,
-          курсы и помощь в изучении языка.
+        <h3 data-i18n="help.card3Title">
+          Русский язык
+        </h3>
+
+        <p data-i18n="help.card3Text">
+          Собраны полезные материалы, курсы и рекомендации для изучения русского языка и улучшения коммуникации.
         </p>
+
       </div>
 
       <div class="card">
-        <div class="icon"><img src="images/medical-help.jpg" alt="Медицинская помощь"></div>
 
-        <h3>Медицинская помощь</h3>
+        <div class="icon">
+          <img src="images/medical-help.jpg" alt="">
+        </div>
 
-        <p>
-          Информация о полисах,
-          поликлиниках и экстренной помощи.
+        <h3 data-i18n="help.card4Title">
+          Медицинская помощь
+        </h3>
+
+        <p data-i18n="help.card4Text">
+          Рассказываем, как получить медицинскую помощь, оформить полис и куда обращаться в экстренных ситуациях.
         </p>
+
       </div>
 
       <div class="card">
-        <div class="icon"><img src="images/city_life.png" alt="Жизнь в городе"></div>
 
-        <h3>Жизнь в городе</h3>
+        <div class="icon">
+          <img src="images/city_life.png" alt="">
+        </div>
 
-        <p>
-          Адаптация к городской среде,
-          культуре и общественной жизни.
+        <h3 data-i18n="help.card5Title">
+          Жизнь в городе
+        </h3>
+
+        <p data-i18n="help.card5Text">
+          Полезная информация о городской среде, культуре, общественном транспорте, образовании и повседневной жизни.
         </p>
+
       </div>
 
       <div class="card">
-        <div class="icon"><img src="images/education.png" alt="Образование"></div>
 
-        <h3>Образование</h3>
+        <div class="icon">
+          <img src="images/education.png" alt="">
+        </div>
 
-        <p>
-          Помощь с поступлением,
-          обучением и школами для детей.
+        <h3 data-i18n="help.card6Title">
+          Образование
+        </h3>
+
+        <p data-i18n="help.card6Text">
+          Помощь с поступлением, обучением и школами для детей.
         </p>
+
       </div>
 
     </div>
@@ -227,54 +370,7 @@
 
 </section>
 
-<section class="section language-section">
-
-  <div class="container language-container">
-
-    <div class="language-image">
-
-      <img src="images/language.jpg" alt="Русский язык">
-
-    </div>
-
-    <div class="language-content">
-
-      <span>Русский язык и культура</span>
-
-      <h2>
-        Изучение языка и адаптация к культуре
-      </h2>
-
-      <p>
-        Мы собрали базовые фразы,
-        полезные рекомендации и материалы
-        для изучения русского языка.
-      </p>
-
-      <div class="phrases">
-
-        <div class="phrase">
-          <strong>Здравствуйте</strong>
-          <span>Hello</span>
-        </div>
-
-        <div class="phrase">
-          <strong>Спасибо</strong>
-          <span>Thank you</span>
-        </div>
-
-        <div class="phrase">
-          <strong>Помогите пожалуйста</strong>
-          <span>Please help</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+<!-- MATERIALS -->
 
 <section class="section" id="materials">
 
@@ -282,130 +378,43 @@
 
     <div class="section-title">
 
-      <span>Информация</span>
+      <span data-i18n="nav.materials">
+        Информация
+      </span>
 
-      <h2>Полезные материалы</h2>
+      <h2 data-i18n="materials.title">
+        Полезные материалы
+      </h2>
 
     </div>
 
     <div class="materials-grid">
 
-      <div class="material-card">
+      <div class="material-card" data-i18n="materials.material1">
         Как оформить регистрацию
       </div>
 
-      <div class="material-card">
+      <div class="material-card" data-i18n="materials.material2">
         Медицинская помощь
       </div>
 
-      <div class="material-card">
+      <div class="material-card" data-i18n="materials.material3">
         Трудоустройство
       </div>
 
-      <div class="material-card">
+      <div class="material-card" data-i18n="materials.material4">
         Запись ребёнка в школу
       </div>
 
-      <div class="material-card">
+      <div class="material-card" data-i18n="materials.material5">
         Горячие линии
       </div>
 
-      <div class="material-card">
+      <div class="material-card" data-i18n="materials.material6">
         Законодательство РФ
       </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section class="section gray-section" id="news">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <span>Новости</span>
-
-      <h2>Новости и мероприятия</h2>
-
-    </div>
-
-    <div class="news-grid">
-
-      <div class="news-card">
-
-        <img src="images/news1.jpg" alt="Новость">
-
-        <div class="news-content">
-
-          <h3>
-            Бесплатная юридическая консультация
-          </h3>
-
-          <p>
-            Консультация по вопросам регистрации
-            и трудоустройства.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div class="news-card">
-
-        <img src="images/news2.jpg" alt="Новость">
-
-        <div class="news-content">
-
-          <h3>
-            Новые языковые курсы
-          </h3>
-
-          <p>
-            Бесплатные курсы русского языка
-            для иностранных граждан.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div class="news-card">
-
-        <img src="images/news3.jpg" alt="Новость">
-
-        <div class="news-content">
-
-          <h3>
-            Семинар по трудовым правам
-          </h3>
-
-          <p>
-            Специалисты расскажут о правах работников.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div class="news-card">
-
-        <img src="images/news4.jpg" alt="Новость">
-
-        <div class="news-content">
-
-          <h3>
-            Культурный фестиваль
-          </h3>
-
-          <p>
-            Фестиваль народов мира и культур.
-          </p>
-
-        </div>
-
+      <div class="material-card" data-i18n="materials.material7">
+        Права иностранных граждан
       </div>
 
     </div>
@@ -413,6 +422,8 @@
   </div>
 
 </section>
+
+<!-- FAQ -->
 
 <section class="section" id="faq">
 
@@ -420,9 +431,13 @@
 
     <div class="section-title">
 
-      <span>FAQ</span>
+      <span>
+        FAQ
+      </span>
 
-      <h2>Часто задаваемые вопросы</h2>
+      <h2 data-i18n="faq.title">
+        Часто задаваемые вопросы
+      </h2>
 
     </div>
 
@@ -430,42 +445,62 @@
 
       <div class="faq-item">
 
-        <button class="faq-question">
+        <button class="faq-question" data-i18n="faq.question1">
           Как оформить регистрацию?
         </button>
 
-        <div class="faq-answer">
-          Для оформления регистрации необходимо обратиться
-          в МФЦ или соответствующие органы.
+        <div class="faq-answer" data-i18n="faq.answer1">
+          Для оформления регистрации необходимо обратиться в соответствующие органы или многофункциональный центр с необходимыми документами.
         </div>
 
       </div>
 
       <div class="faq-item">
 
-        <button class="faq-question">
+        <button class="faq-question" data-i18n="faq.question2">
           Где получить медицинскую помощь?
         </button>
 
-        <div class="faq-answer">
-          Медицинскую помощь можно получить
-          в государственных поликлиниках.
+        <div class="faq-answer" data-i18n="faq.answer2">
+          Медицинскую помощь можно получить в государственных поликлиниках и больницах при наличии необходимых документов и полиса.
         </div>
 
       </div>
 
       <div class="faq-item">
 
-        <button class="faq-question">
+        <button class="faq-question" data-i18n="faq.question3">
           Можно ли официально работать?
         </button>
 
-        <div class="faq-answer">
-          Да, при наличии необходимых документов.
+        <div class="faq-answer" data-i18n="faq.answer3">
+          Да, при наличии разрешительных документов и соблюдении законодательства Российской Федерации.
         </div>
 
       </div>
 
+      <div class="faq-item">
+
+        <button class="faq-question" data-i18n="faq.question4">
+          Где изучать русский язык?
+        </button>
+
+        <div class="faq-answer" data-i18n="faq.answer4">
+          На сайте представлены ссылки на бесплатные курсы, онлайн-материалы и образовательные центры.
+        </div>
+
+      </div>
+      <div class="faq-item">
+
+        <button class="faq-question" data-i18n="faq.question5">
+          Куда обращаться за помощью?
+        </button>
+
+        <div class="faq-answer" data-i18n="faq.answer5">
+          Вы можете связаться с нами через форму обратной связи или обратиться в партнёрские организации.
+        </div>
+
+      </div>
     </div>
 
   </div>
@@ -478,48 +513,75 @@
 
     <div class="contacts-info">
 
-      <span>Контакты</span>
+      <span data-i18n="contacts.smallTitle">
+        Контакты
+      </span>
 
-      <h2>Связаться с нами</h2>
+      <h2 data-i18n="contacts.title">
+        Связаться с нами
+      </h2>
 
-      <p>
-        Если вам нужна помощь,
-        свяжитесь с нами удобным способом.
+      <p data-i18n="contacts.text">
+        Если вам нужна помощь, свяжитесь с нами.
       </p>
 
       <div class="contact-item">
-        <img src="images/phone.svg" alt="Телефон"> 
-        +7 (999) 123-45-67
+
+        <img src="images/phone.svg" alt="Телефон">
+          +7 (906) 636-65-21
+
       </div>
 
       <div class="contact-item">
-        <img src="images/email.svg" alt="Email"> 
-        info@vmeste-help.ru
+
+        <img src="images/email.svg" alt="Email">
+          do6528583@gmail.com
       </div>
 
       <div class="contact-item">
-        <img src="images/address.svg" alt="Адрес"> 
-        Москва, ул. Примерная, 10
+
+        <img src="images/address.svg" alt="Адрес">
+        Ярославль, улица Некрасова, 63
       </div>
 
       <div class="contact-item">
-        <img src="images/workingTime.svg" alt="Время работы"> 
-        Пн–Пт, 09:00–18:00
+
+        <img src="images/workingTime.svg" alt="Время работы">
+          Пн–Пт, 09:00–18:00
       </div>
 
     </div>
 
     <form class="contact-form">
 
-      <input type="text" placeholder="Ваше имя">
+    <input
+        type="text"
+        name="name"
+        required
+        data-i18n-placeholder="contacts.namePlaceholder"
+        placeholder="Ваше имя">
 
-      <input type="email" placeholder="Ваш email">
+    <input
+        type="email"
+        name="email"
+        required
+        data-i18n-placeholder="contacts.emailPlaceholder"
+        placeholder="Ваш email">
 
-      <textarea placeholder="Ваше сообщение"></textarea>
+    <textarea
+        name="message"
+        required
+        data-i18n-placeholder="contacts.messagePlaceholder"
+        placeholder="Ваше сообщение"></textarea>
 
-      <button type="submit" class="btn btn-primary">
+    <button
+        type="submit"
+        class="btn btn-primary"
+        data-i18n="contacts.sendButton">
+
         Отправить сообщение
-      </button>
+
+    </button>
 
     </form>
 
@@ -527,25 +589,56 @@
 
 </section>
 
+<!-- MAP -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span data-i18n="map.smallTitle">
+        Карта помощи
+      </span>
+
+      <h2 data-i18n="map.title">
+        Полезные организации
+      </h2>
+
+    </div>
+
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3Aexample"
+      width="100%"
+      height="450"
+      frameborder="0">
+    </iframe>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
 <footer class="footer">
 
   <div class="container footer-container">
 
-    <p>
+    <p data-i18n="footer.text">
       © 2026 «Вместе». Все права защищены.
     </p>
 
     <div class="footer-links">
 
-      <a href="#">
+      <a href="#" data-i18n="footer.privacyPolicy">
         Политика конфиденциальности
       </a>
 
-      <a href="#">
+      <a href="#" data-i18n="footer.userAgreement">
         Пользовательское соглашение
       </a>
 
-      <a href="#contacts">
+      <a href="#contacts" data-i18n="nav.contacts">
         Контакты
       </a>
 
@@ -555,7 +648,9 @@
 
 </footer>
 
+<button id="scrollTop" class="scroll-top">
+    ↑
+</button>
 <script src="script.js"></script>
-
 </body>
 </html>
