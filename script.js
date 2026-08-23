@@ -256,7 +256,6 @@ const translations = {
             contacts: 
                 "Contacts",
         },  
-        // О нас
         about:{
             text1:
                 "The Together project was created to support migrants living in Russian cities. Our goal is to help people adapt to a new environment faster, get the necessary information and feel like a part of society.",
@@ -444,7 +443,6 @@ const translations = {
             "Xabaringiz",
         successMessage:
             "Xabar muvaffaqiyatli yuborildi!",
-        // Навигация
         nav:{
             home: 
                 "Bosh sahifa",
@@ -461,7 +459,6 @@ const translations = {
             contacts:
                 "Kontaktlar",
         },
-        // О нас
         about:{
             text1:
                 "“Birgalikda” loyihasi Rossiya shaharlarida istiqomat qilayotgan migrantlarni qo‘llab-quvvatlash maqsadida yaratilgan. Bizning maqsadimiz - odamlarga yangi muhitga tezroq moslashish, kerakli ma’lumotlarni olish va o‘zlarini jamiyatning bir qismi sifatida his qilishlariga yordam berish.",
@@ -785,10 +782,6 @@ if (form) {
 
 }
 
-/* =========================
-   DARK THEME
-========================= */
-
 const themeToggle =
     document.getElementById('themeToggle');
 
@@ -825,10 +818,6 @@ if (themeToggle) {
     });
 
 }
-
-/* =========================
-   SCROLL TOP BUTTON
-========================= */
 
 const scrollTopBtn =
     document.getElementById('scrollTop');
